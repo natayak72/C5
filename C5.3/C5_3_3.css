@@ -1,0 +1,23 @@
+input:valid {
+    background-color: palegreen;
+
+}
+
+input:invalid {
+    background-color: lightpink;
+
+}
+
+input:placeholder-shown {
+    background-color: rgba(160, 148, 149, 0.2);
+}
+
+p {
+    visibility: hidden;
+}
+
+img {
+    padding: 30px 30px;
+    width: 100px;
+    height: 100px;
+}

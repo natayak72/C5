@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C5.3</title>
+        <link rel='stylesheet' href='C5_3_3.css'>
+        
+    </head>
+    <main>
+        <form>
+            <label for="number_input">
+                Введите число от 1 до 10: 
+            </label>
+            <input
+                id='number_input'
+                type="text" 
+                label="text" 
+                placeholder="Введите число..."
+                pattern="[1-9]|10"
+                required
+            >
+            <button 
+                id='send_button'
+                disabled
+                type="button">
+                    Выполнить
+            </button>
+            <p
+                id='input_error_message'
+                visibility>
+                    Число вне диапазона от 1 до 10
+            </p>
+        </form>
+        <div
+            id="image_container"
+            >
+        </div>
+    </main>
+    <script src='./C5_3_3.js'></script>
+</html>
