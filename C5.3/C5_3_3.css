@@ -1,3 +1,21 @@
+.block {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.block_xhr {
+    background-color: rgba(200, 231, 68, 0.3);
+}
+
+.block_fetch {
+    background-color: rgba(43, 227, 117, 0.16);
+}
+
+.block_fetch_async {
+    background-color: rgba(227, 43, 64, 0.16);
+}
+
 input:valid {
     background-color: palegreen;
 

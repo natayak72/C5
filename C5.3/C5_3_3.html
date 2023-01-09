@@ -3,37 +3,116 @@
     <head>
         <title>C5.3</title>
         <link rel='stylesheet' href='C5_3_3.css'>
-        
+        <meta charset="utf-8">
     </head>
     <main>
-        <form>
-            <label for="number_input">
-                Введите число от 1 до 10: 
-            </label>
-            <input
-                id='number_input'
-                type="text" 
-                label="text" 
-                placeholder="Введите число..."
-                pattern="[1-9]|10"
-                required
-            >
-            <button 
-                id='send_button'
-                disabled
-                type="button">
+        <div class="block block_xhr">
+            <h2>Работа с XHR</h2>
+            <form>
+                <label for="number_input_xhr_id">
+                    Введите число от 1 до 10:
+                </label>
+                <input
+                        id='number_input_xhr_id'
+                        type="text"
+                        label="text"
+                        placeholder="Введите число..."
+                        pattern="[1-9]|10"
+                        required
+                >
+                <button
+                        id='send_button'
+                        disabled
+                        type="button">
                     Выполнить
-            </button>
-            <p
-                id='input_error_message'
-                visibility>
+                </button>
+                <button
+                        id='delete_images_btn_xhr_id'
+                        disabled
+                        type="button">
+                    Удалить картинки
+                </button>
+                <p
+                        id='input_error_message'
+                        visibility>
                     Число вне диапазона от 1 до 10
-            </p>
-        </form>
-        <div
-            id="image_container"
-            >
+                </p>
+            </form>
+            <div id="image_container_xhr_id"></div>
+        </div>
+        <hr>
+        <div class="block block_fetch">
+            <h2>Работа с fetch</h2>
+            <form>
+                <label for="number_input_fetch">
+                    Введите число от 1 до 10:
+                </label>
+                <input
+                        id='number_input_fetch'
+                        type="text"
+                        label="text"
+                        placeholder="Введите число..."
+                        pattern="[1-9]|10"
+                        required
+                >
+                <button
+                        id='send_button_fetch'
+                        disabled
+                        type="button">
+                    Выполнить
+                </button>
+                <button
+                        id='delete_images_btn_fetch'
+                        disabled
+                        type="button">
+                    Удалить картинки
+                </button>
+                <p
+                        id='input_error_message_fetch'
+                        visibility>
+                    Число вне диапазона от 1 до 10
+                </p>
+            </form>
+            <div id="image_container_fetch"></div>
+        </div>
+        <hr>
+        <div class="block block_fetch_async">
+            <h2>Работа с асинхронным fetch</h2>
+            <form>
+                <label for="number_input_fetch_async">
+                    Введите число от 1 до 10:
+                </label>
+                <input
+                        id='number_input_fetch_async'
+                        type="text"
+                        label="text"
+                        placeholder="Введите число..."
+                        pattern="[1-9]|10"
+                        required
+                >
+                <button
+                        id='send_button_fetch_async'
+                        disabled
+                        type="button">
+                    Выполнить
+                </button>
+                <button
+                        id='delete_images_btn_fetch_async'
+                        disabled
+                        type="button">
+                    Удалить картинки
+                </button>
+                <p
+                        id='input_error_message_fetch_async'
+                        visibility>
+                    Число вне диапазона от 1 до 10
+                </p>
+            </form>
+            <div id="image_container_fetch_async"></div>
         </div>
     </main>
     <script src='./C5_3_3.js'></script>
+    <script src="./xhr_load.js"></script>
+    <script src="./fetch_load.js"></script>
+    <script src="./fetch_async_load.js"></script>
 </html>

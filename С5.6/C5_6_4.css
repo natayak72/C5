@@ -1,0 +1,59 @@
+.block {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.block_fetch_async {
+    background-color: rgba(243, 206, 84, 0.51);
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+input:valid {
+    background-color: palegreen;
+
+}
+
+input:invalid {
+    background-color: lightpink;
+
+}
+
+input:placeholder-shown {
+    background-color: rgba(160, 148, 149, 0.2);
+}
+
+p {
+    border-radius: 20px;
+    padding: 20px;
+    visibility: hidden;
+    border: 1px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    width: 400px;
+    text-align: center;
+}
+
+img {
+    padding: 30px 30px;
+    /*width: 100px;*/
+    /*height: 100px;*/
+}
+
+button {
+    border-radius: 15px;
+    margin-right: 15px;
+    width: 300px;
+    height: 50px;
+}
+
+.load-button {
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.delete-button {
+    background-color: rgba(255, 0, 0, 0.15);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C5.7</title>
+        <link rel='stylesheet' href='C5_7.css'>
+        <meta charset="utf-8">
+    </head>
+    <main>
+        <div class="block block_final">
+            <h2>Финальное задание - С5.7</h2>
+            <form>
+                <label for="page_num_inp_id">
+                    Номер страницы (от 1 до 10):
+                </label>
+                <input
+                        id='page_num_inp_id'
+                        type="text"
+                        label="text"
+                        placeholder="Введите номер страницы..."
+                        pattern="[1-9]|10"
+                        required
+                >
+                <br>
+                <label for="limit_inp_id">
+                    Лимит (от 1 до 10):
+                </label>
+                <input
+                        id='limit_inp_id'
+                        type="text"
+                        label="text"
+                        placeholder="Введите лимит..."
+                        pattern="[1-9]|10"
+                        required
+                >
+                <br>
+                <p id='error_message_id' visibility></p>
+
+                <button
+                        class="load-button"
+                        id='send_btn_id'
+                        disabled
+                        type="button">
+                    Выполнить
+                </button>
+                <button
+                        class="delete-button"
+                        id='delete_images_btn_id'
+                        disabled
+                        type="button">
+                    Удалить картинки
+                </button>
+
+            </form>
+            <div id="image_container_id"></div>
+        </div>
+    </main>
+    <script src="./C5_7.js"></script>
+</html>

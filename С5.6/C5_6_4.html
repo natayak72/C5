@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C5.6</title>
+        <link rel='stylesheet' href='C5_6_4.css'>
+        <meta charset="utf-8">
+    </head>
+    <main>
+        <div class="block block_fetch_async">
+            <h2>Задание 4 из С5.6</h2>
+            <form>
+                <label for="number_inp_width_id">
+                    Введите ширину картинки (от 100 до 300):
+                </label>
+                <input
+                        id='number_inp_width_id'
+                        type="text"
+                        label="text"
+                        placeholder="Введите ширину..."
+                        pattern="[1-2][0-9][0-9]|300"
+                        required
+                >
+                <p
+                        id='width_error_message_id'
+                        visibility>
+                    Ширина вне диапазона от 100 до 300!
+                </p>
+                <br>
+                <label for="number_inp_height_id">
+                    Введите высоту картинки (от 100 до 300):
+                </label>
+                <input
+                        id='number_inp_height_id'
+                        type="text"
+                        label="text"
+                        placeholder="Введите высоту..."
+                        pattern="[1-2][0-9][0-9]|300"
+                        required
+                >
+                <p
+                        id='height_error_message_id'
+                        visibility>
+                    Высота вне диапазона от 100 до 300!
+                </p>
+                <br>
+                <button
+                        class="load-button"
+                        id='send_btn_id'
+                        disabled
+                        type="button">
+                    Выполнить
+                </button>
+                <button
+                        class="delete-button"
+                        id='delete_images_btn_id'
+                        disabled
+                        type="button">
+                    Удалить картинки
+                </button>
+
+            </form>
+            <div id="image_container_id"></div>
+        </div>
+    </main>
+    <script src='./C5_6_4.js'></script>
+    <script src="./с5_6_4_fetch_async_load.js"></script>
+</html>
