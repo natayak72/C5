@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C6</title>
+    <link rel="stylesheet" href="C6.css">
+</head>
+<body>
+    <div class="block block_final">
+        <h2>Задание C6.2</h2>
+        <button
+            class="button_big"
+            id="send_notification_btn_id">
+            Отправить уведомление
+        </button>
+        <button
+                class="button_big"
+                id="get_screen_size_btn_id">
+            Узнать размер экрана
+        </button>
+        <p id="screen_size_p_id">Размер экрана: </p>
+    </div>
+    <div class="block block_final">
+        <h2>Задание С6.3</h2>
+        <form>
+            <label for="chat_input_id">Введите сообщение:</label>
+            <input id="chat_input_id">
+            <button id="chat_send_msg_btn_id" type="button" disabled>Открытие вебсокета...</button>
+            <button id="chat_send_location_btn_id" type="button">Отправить геолокацию</button>
+            <button id="clear_chat_btn_id"type="button">Очистить чат</button>
+        </form>
+        <div class="chat_window"
+            id="chat_window_id">
+        </div>
+    </div>
+</body>
+<script src="C6_2.js"></script>
+<script src="C6_3.js"></script>
+</html>
